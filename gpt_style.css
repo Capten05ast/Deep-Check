@@ -1,0 +1,260 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    contain: content;
+    font-family: 'Anta';
+    color:#68FDF1;
+}
+
+header {
+    height: 20%;
+    background-color: black;
+}
+
+.ele {
+    display: flex;
+    flex-direction: row;
+}
+
+.ele-head {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    font-size: 25px;
+    padding-left: 5%;
+    width: 50%;
+
+    font-family: 'Playwrite AU SA';
+}
+
+
+.ele-body {
+    display: flex;
+    flex-direction: row;
+    padding: 1.9rem;
+    gap: 3rem;
+    padding-left: 7%;
+}
+
+.settings-icon {
+    color:#EE3321;
+    font-size: 36px;
+    padding:0.7rem;
+    margin-left: 5%;
+}
+
+main {
+    background-color: #0882AA;
+    height: 100vh;
+
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbox {
+    background-color: #213941;
+    height: 80%;
+    width: 80%;
+
+    border: 6px solid black;
+    border-radius: 10px;
+
+    font-family: "Roboto";
+    position: absolute;
+
+    overflow-y: auto;
+}
+
+.msg {
+    font-family: "Roboto";
+    color: beige;
+    font-size: 18px;
+    position: relative;
+    height: 85%;
+    overflow-y: auto;
+
+    /* msg covers the 80% area of the chatbox while displaying so it needs to
+    be scrolled thats why we used :-
+    overflow-y: auto;
+    */
+}
+
+.ask {
+    font-family: "Roboto";
+    color: beige;
+    font-size: 18px;
+    position: relative;
+    background-color: #000000;
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.type-here {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#userInput {
+    height:8vh;
+    background-color: #c29b25;
+    color: black;
+    /* border: 3px solid #68FDF1; */
+    width: 142vh; 
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#userInput::placeholder {
+    color: black; /* Change to your desired color */
+    font-style: italic; /* Optional: Add styling */
+    opacity: 0.7; /* Ensure full visibility */
+}
+
+#sendBtn {
+    margin-left: 5vh;
+    padding: 3px;
+    font-size: 30px;
+    background-color: #c29b25;
+    border-radius: 10px;
+}
+
+
+
+/* dynamic css styling ahead :- */
+.message {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    width:fit-content;
+}
+
+.user {
+    background-color: #1ed2c3;
+    color: black;
+    align-self:center;
+    text-align: right;
+
+    margin-left: auto;
+}
+
+.bot {
+    background-color: #333;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.ri-tools-fill{
+    color: rgb(255, 140, 0);
+}
+
+.ri-send-plane-2-fill{
+    color: rgb(2, 119, 2);
+}
+
+
+
+
+
+/* MAKING IT RESPONSIVE */
+@media (max-width: 410px) {
+    body {
+        font-size: 14px;
+    }
+    #userInput {
+        height:8vh;
+        background-color: #c29b25;
+        color: black;
+        /* border: 3px solid #68FDF1; */
+        width: 42vh; 
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    #userInput::placeholder {
+        color: black; /* Change to your desired color */
+        font-style: italic; /* Optional: Add styling */
+        opacity: 0.7; /* Ensure full visibility */
+        font-size: 18px;
+    }
+    .chatbox {
+        background-color: #213941;
+        height: 89%;
+        width: 89%;
+    
+        border: 6px solid black;
+        border-radius: 10px;
+    
+        font-family: "Roboto";
+        position: absolute;
+    
+        overflow-y: auto;
+    }
+
+    .ele-head {
+        font-weight: bold;
+        padding: 1rem;
+        font-size: 18px;
+        padding-left: 2%;
+        width: 38%;
+        line-height: 1.4;
+    
+        font-family: 'Playwrite AU SA';
+    }
+    .ele-body {
+        display: flex;
+        flex-direction: row;
+        padding: 1.9rem;
+        gap: 1rem;
+        padding-left: 5%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .settings-icon {
+        color:#EE3321;
+        font-size: 36px;
+        padding:0.7rem;
+        margin-top: 12px;
+        margin-left: 3%;
+    }
+    .message {
+        padding: 10px;
+        margin: 8px;
+        border-radius: 5px;
+        width:fit-content;
+
+        font-size: 6;
+    }
+    
+    .user {
+        background-color: #1ed2c3;
+        color: black;
+        align-self:center;
+        text-align: right;
+    
+        margin-left: auto;
+        font-size: 16px;
+    }
+    
+    .bot {
+        background-color: #333;
+        color: white;
+        align-self: flex-start;
+        text-align: left;
+        font-size: 16px;
+    }
+}
+
+
