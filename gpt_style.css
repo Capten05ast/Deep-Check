@@ -1,0 +1,495 @@
+* {
+    padding: 0%;
+    box-sizing: border-box;
+    contain: content;
+    color:#68FDF1;
+    margin: 0%;
+}
+
+body{
+    margin-bottom: -50px;
+}
+
+header {
+    height: 6%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.ele {
+    display: flex;
+    flex-direction: row;
+}
+
+.ele-head {
+    /* font-weight: bold; */
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    font-size: 25px;
+    padding-left: 5%;
+    margin-top: 3px;
+    width: 50%;
+
+    /* font-family: "Shadows Into Light", serif; */
+    font-family: "Pacifico", serif;
+    cursor: pointer;
+    transition:2s;
+    color:#1ed2c3
+}
+
+
+
+.ele-body {
+    display: flex;
+    flex-direction: row;
+    padding: 1.9rem;
+    gap: 3rem;
+    padding-left: 7%;
+
+    font-family: "Anta";
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.same{
+    text-decoration: none;
+}
+.same:hover {
+    transform:scale(1.3);
+    /* font-family: "Roboto"; */
+}
+
+.settings-icon {
+    color:#EE3321;
+    font-size: 36px;
+    padding:0.7rem;
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.settings-icon:hover {
+    color:#EE3321;
+    font-size: 36px;
+    /* padding:0.7rem;
+    margin-left: 5%; */
+
+    display: flex;
+    justify-content: center;
+    transform: rotateZ(180deg);
+    transform: rotateX(180deg) scale(1.2);
+}
+
+main {
+    background-color: #0882AA;
+    height: 100vh;
+
+    /* align-self: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.chatbox {
+    background-color: #213941;
+    height: 80%;
+    width: 80%;
+    margin-top: -50px;
+
+    border: 6px solid black;
+    border-radius: 10px;
+
+    font-family: "Roboto";
+    position: absolute;
+
+    overflow-y: auto;
+}
+
+.signals{
+    height: 7%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+
+    text-align: center;
+}
+.signal1{
+    background-color: red;
+    height: 23px;
+    width:23px;
+    border:1px solid black;
+    border-radius: 50px;
+}
+.signal2{
+    background-color: orange;
+    height: 23px;
+    width:23px;
+    border:1px solid black;
+    border-radius: 50px;
+}
+.signal3{
+    background-color: green;
+    height: 23px;
+    width:23px;
+    border:1px solid black;
+    border-radius: 50px;
+}
+
+.msg {
+    font-family: "Roboto";
+    color: beige;
+    font-size: 18px;
+    position: relative;
+    height: 78%;
+    overflow-y: auto;
+
+
+    /* msg covers the 80% area of the chatbox while displaying so it needs to
+    be scrolled thats why we used :-
+    overflow-y: auto;
+    */
+}
+
+.ask {
+    font-family: "Anta";
+    color: beige;
+    font-size: 18px;
+    position: relative;
+    background-color: #000000;
+    height: 15%;
+
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.type-here {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#userInput {
+    height:8vh;
+    background-color: #c29b25;
+    color: black;
+    /* border: 3px solid #68FDF1; */
+    width:63vw; 
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+
+    font-weight:600;
+}
+
+#userInput::placeholder {
+    color: black; /* Change to your desired color */
+    font-style: italic; /* Optional: Add styling */
+    opacity: 0.7; /* Ensure full visibility */
+}
+
+#sendBtn {
+    margin-left: 5vh;
+    padding: 3px;
+    font-size: 30px;
+    background-color:rgb(6, 201, 6);
+    border-radius: 10px;
+}
+
+
+
+/* dynamic css styling ahead :- */
+.message {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    width:fit-content;
+}
+
+.user {
+    background-color: #1ed2c3;
+    color: black;
+    align-self:center;
+    text-align: right;
+
+    margin-left: auto;
+}
+
+.bot {
+    background-color: #3c3b3b;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.ri-tools-fill{
+    color: rgb(255, 140, 0);
+    font-size: 40px;
+}
+
+.ri-send-plane-2-fill{
+    color: black;
+}
+
+
+.ri-robot-3-fill{
+    padding-top: 0.7rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 30px;
+
+    margin-bottom:-8px;
+    margin-top: 8px;
+}
+
+.ri-user-star-fill{
+    padding-top: 0.7rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 30px;
+
+    align-self:center;
+    text-align: right;
+
+    color:rgb(255, 140, 0);
+    margin-left: auto;
+
+    margin-bottom:-8px;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+.center_text{
+    font-family: "Anta", serif;
+    font-size: 15px;
+    color: #f64d66;
+}
+
+.sidebar{
+    /* visibility:hidden; */
+    visibility: hidden;
+    font-family: "Anta";
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 21px;
+    margin-left: 11px;
+
+    position: sticky;
+    background-color: black;
+    color: #1ed2c3;
+    left:68vw;
+    bottom: 12vw;
+    padding: 14px;
+
+
+    border-radius: 20px;
+    border: 3px solid #213941;
+    cursor: pointer;
+}
+
+.special {
+    color:#FFA500;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+.contact {
+    margin-top: 11px;
+}
+
+.CloseTab {
+    font-size: 18px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #EE3321;
+    padding: 10px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+}
+.CloseTab:hover {
+    transform: scale(2.8);
+}
+
+.normal {
+    padding:10px;
+    color:#1ed2c3
+}
+
+.ri-mail-open-fill{
+    color: red;
+    font-size: 24px;
+}
+.ri-customer-service-fill{
+    color:rgb(6, 201, 6);
+    font-size: 25px;
+}
+
+
+
+
+/* MAKING IT RESPONSIVE */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ele-head {
+        font-size: 1.2rem;
+        padding-left: 5%;
+        margin-top: 2%;
+    }
+
+    .settings-icon {
+        font-size: 1.8rem;
+    }
+
+    .chatbox {
+        width: 95%;
+        height: 85%;
+    }
+
+    .message {
+        font-size: 16px;
+        max-width: 80%;
+    }
+
+    #userInput {
+        width: 63vw;
+        font-size: 16px;
+    }
+
+    #sendBtn {
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ele-head {
+        /* font-weight: bold; */
+        letter-spacing: 0.1rem;
+        padding: 1rem;
+        font-size: 25px;
+        padding-left: 5%;
+        margin-top: 3px;
+        width: 30%;
+    
+        /* font-family: "Shadows Into Light", serif; */
+        font-family: "Pacifico", serif;
+        cursor: pointer;
+        transition:2s;
+        color:#1ed2c3
+    }
+    
+    /* .ele-body{
+
+    } */
+
+    .settings-icon {
+        font-size: 1.5rem;
+        margin-left: -4px;
+        margin-right: 2px;
+    }
+
+    .chatbox {
+        width: 95%;
+        height: 75%;
+        margin-top: -120px;
+    }
+
+    .message {
+        font-size: 14px;
+        max-width: 85%;
+    }
+
+    #userInput {
+        width: 66vw;
+        font-size: 18px;
+        height: 35px;
+    }
+
+    #sendBtn {
+        font-size: 21px;
+        padding: 5px;
+    }
+
+    .msg {
+        height: 85%;
+    }
+    .ask {
+        height: 8%;
+    }
+
+    .signal1{
+        background-color: red;
+        height: 30px;
+        width:30px;
+        border:1px solid black;
+        border-radius: 50px;
+    }
+    .signal2{
+        background-color: orange;
+        height: 30px;
+        width:30px;
+        border:1px solid black;
+        border-radius: 50px;
+    }
+    .signal3{
+        background-color: green;
+        height: 30px;
+        width:30px;
+        border:1px solid black;
+        border-radius: 50px;
+    }
+    main {
+        background-color: #0882AA;
+        height: 100vh;
+    
+        /* align-self: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+
+    .sidebar{
+        visibility: hidden;
+        font-family: "Anta";
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 11px;
+    
+        position: sticky;
+        background-color: black;
+        color: #1ed2c3;
+        left:33vw;
+        bottom: 50vw;
+        padding: 14px;
+    
+    
+        border-radius: 20px;
+        border: 3px solid #213941;
+    }
+
+}
+
